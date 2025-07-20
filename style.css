@@ -1,0 +1,148 @@
+* {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    body {
+      background: #3F5EFB;
+background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(70, 158, 252, 1) 64%);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 20px;
+    }
+    
+   
+    
+
+    header, footer {
+      
+      backdrop-filter: blur(5px);
+      padding: 15px 30px;
+      text-align: center;
+      color: darkblue;
+      margin-top: 20px;
+    }
+
+    footer{
+      background-color: transparent;
+    }
+    
+
+    header nav a {
+      color:wheat;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 20px;
+      background: #3F5EFB;
+      padding: 10px;
+      border-radius: 10px;
+      box-shadow: 0 8px 20px darkblue;
+    }
+
+    
+
+    h1 {
+      text-align: center;
+      font-size: 3rem;
+      color: darkblue;
+      margin: 20px 0;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+    h1 {
+      color: wheat;
+      margin-bottom: 20px;
+      animation: fadeIn 1s ease-in-out;
+    }
+    .converter {
+      background: transparent;
+      backdrop-filter: blur(15px);
+      border: 1px solid darkblue;
+      border-radius: 15px;
+      padding: 25px 30px;
+      box-shadow: 0 8px 20px darkblue;
+      animation: slideIn 1s ease-in-out;
+      width: 350px;
+      max-width: 90%;
+    }
+    .converter label {
+      font-weight: bold;
+      margin-top: 10px;
+      display: block;
+    }
+    .converter input, .converter select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      border: 1px solid darkblue;
+      font-size: 1rem;
+    }
+    .converter button {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 8px;
+      background-color: #3F5EFB;
+      color: wheat;
+      font-size: 1.1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .converter button:hover {
+      background-color: #22c55e;
+    }
+    .result {
+      margin-top: 15px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #333;
+      text-align: center;
+    }
+    .instructions {
+      color: wheat;
+      margin-bottom: 25px;
+      font-size: 1.1rem;
+      text-align: center;
+      animation: bounceIn 1.2s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes slideIn {
+      from { transform: translateY(50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    @keyframes bounceIn {
+      0% { transform: scale(0.8); opacity: 0; }
+      60% { transform: scale(1.05); opacity: 1; }
+      100% { transform: scale(1); }
+    }
+    footer {
+      text-align: center;
+      font-size: 16px;
+      color: darkblue;
+    }
+
+    footer a {
+      color: darkblue;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }

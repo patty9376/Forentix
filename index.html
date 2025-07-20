@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currency Converter</title>
+  <link rel="stylesheet" href="style.css">
+  
+
+</head>
+<body>
+  <body>
+  
+  <h1>Currency Converter</h1>
+
+  <div class="instructions">
+    Enter an amount, choose currencies, and click Convert to get real-time conversion!
+  </div>
+
+  <div class="converter">
+    <label for="amount">Amount</label>
+    <input type="number" id="amount" placeholder="Enter amount" />
+
+    <label for="from">From</label>
+    <select id="from">
+      <option value="USD">USD</option>
+      <option value="INR">INR</option>
+      <option value="EUR">EUR</option>
+      <option value="GBP">GBP</option>
+      <option value="JPY">JPY</option>
+      <option value="CAD">CAD</option>
+      <option value="AUD">AUD</option>
+      <option value="CHF">CHF</option>
+      <option value="CNY">CNY</option>
+      <option value="HKD">HKD</option>
+      <option value="NZD">NZD</option>
+      <option value="SEK">SEK</option>
+      <option value="SGD">SGD</option>
+      <option value="KRW">KRW</option>
+      <option value="ZAR">ZAR</option>
+      <option value="MXN">MXN</option>
+      <option value="THB">THB</option>
+      <option value="AED">AED</option>
+      <option value="BRL">BRL</option>
+      <option value="MYR">MYR</option>
+    </select>
+
+    <label for="to">To</label>
+    <select id="to">
+      <option value="INR">INR</option>
+      <option value="USD">USD</option>
+      <option value="EUR">EUR</option>
+      <option value="GBP">GBP</option>
+      <option value="JPY">JPY</option>
+      <option value="CAD">CAD</option>
+      <option value="AUD">AUD</option>
+      <option value="CHF">CHF</option>
+      <option value="CNY">CNY</option>
+      <option value="HKD">HKD</option>
+      <option value="NZD">NZD</option>
+      <option value="SEK">SEK</option>
+      <option value="SGD">SGD</option>
+      <option value="KRW">KRW</option>
+      <option value="ZAR">ZAR</option>
+      <option value="MXN">MXN</option>
+      <option value="THB">THB</option>
+      <option value="AED">AED</option>
+      <option value="BRL">BRL</option>
+      <option value="MYR">MYR</option>
+    </select>
+
+    <button onclick="convertCurrency()">Convert</button>
+
+    <div class="result" id="result"></div>
+
+  </div>
+
+  <footer>
+    <p>&copy; 2023 Naturfizz. All rights reserved || Designed by
+    <a href="https://www.linkedin.com/in/ganeshan-rathor-2ab402317/" target="_blank">Ganeshan Rathor</a></p>
+  </footer>
+
+  <script src="/Currency Convertor Calculator/script.js""></script>
+</body>
+</html>
